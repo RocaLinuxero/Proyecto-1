@@ -82,7 +82,7 @@ class App:
         Button(frame, text="Generar Factura", bg="#27ae60", fg="white",
                command=self.generar_factura).grid(row=5, columnspan=2, pady=10)
 
-    # ✅ ESTA FUNCIÓN DEBE ESTAR DENTRO DE LA CLASE
+
     def generar_factura(self):
         try:
             consumo = float(self.consumo.get())
@@ -160,7 +160,7 @@ class App:
 
         messagebox.showinfo("Éxito", f"Factura generada\n{ruta}")
 
-    # ✅ FUNCIÓN CLEAR CORRECTA
+    
     def clear(self):
         for widget in self.root.winfo_children():
             widget.destroy()
