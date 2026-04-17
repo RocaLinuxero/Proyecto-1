@@ -174,8 +174,8 @@ class App:
         self.enviar_correo(self.correo.get(), ruta)
 
     def enviar_correo(self, destinatario, archivo_pdf):
-        remitente = "Jroca000a@gmail.com"
-        contraseña = "pvnr qplk elgp udab"
+        remitente = ""
+        contraseña = ""
 
         msg = EmailMessage()
         msg["Subject"] = "Factura de Energía"
